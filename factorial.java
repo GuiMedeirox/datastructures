@@ -23,15 +23,18 @@ public class factorial {
 
 
   public static void main(String[] args) {
+    int value = Integer.parseInt(args[0]);
+
+
     long startTime = System.nanoTime();
-    System.out.println(interative(5));
+    System.out.println(interative(value));
     long endTime = System.nanoTime();
     long totalTime = endTime-startTime; 
     System.out.println("interative time: " +totalTime);
 
 
     startTime=System.nanoTime();
-    System.out.println(recursive(5));
+    System.out.println(recursive(value));
     endTime=System.nanoTime();
     totalTime=endTime-startTime;
     System.out.println("recursive time: " +totalTime);
